@@ -4,7 +4,7 @@
 - [X] Update from Pop!_OS 21.04 => 22.04.
 - [X] Make sure all installed software is up to date.
 - [X] Make Razer Keyboard/ mouse lights static instead of breath
-- [ ] Disable middlemouse click not doing scroll
+- [ ] Disable middlemouse click doing 'random' paste (From X server ?)
 - [X] Getting Steam up and running.
 - [X] Update Nvidia drivers
 - [X] Getting non linux game PlateUp to run in Steam via Proton
@@ -22,6 +22,18 @@ Updated through Settings => OS Upgrade & Recovery
 * Under 'Keyboard & Mouse' untick 'Middle Click Paste'
 * * For me this only disabled it in GNOME, hmmm.
 
+Source: [askubuntu.com](https://askubuntu.com/a/1144039)
+Found this answer which seems to work everywhere.
+
+```bash
+echo '"echo -n | xsel -n -i; pkill xbindkeys; xdotool click 2; xbindkeys"' >> ~/.xbindkeysrc
+xbindkeys -p
+echo "" >> ~/.profile 
+echo "xbindkeys -p" >> ~/.profile
+```
+
+Need to test it works after reboot.
+
 ### Razer 'Support'
 Have allready installed [OpenRazer](https://openrazer.github.io/)
 
@@ -35,7 +47,7 @@ I are trying out 'Polychromatic' as it seems to be the biggest and also the firs
 
 After installing i simply opened 'Polychromatic' and set my colors to my usual color with static, and the keyboard and mouse changed color as specified.
 
-Just need to test that it's saved between restarts.
+~~Just need to test that it's saved between restarts.~~
 
 #### Keymapping
 Polychromatic does not by it self support remapping button for ie F13.
@@ -52,6 +64,14 @@ In the tool do the following
 * Press 'Apply' on the left hand side.
 
 Need to test if still works without problem after OS restart.
+It did not work.
+Have modified the '~/.config/input-remapper/config.json'
+Have added this to the autoload setting, need to test again after restart.
+```json
+    "autoload": {
+        "Razer Razer DeathAdder V2": "F19"
+    },
+```
 
 ### Steam
 * Install 'Steam' from Pop!_Shop, i choose deb instead of flatpack.
