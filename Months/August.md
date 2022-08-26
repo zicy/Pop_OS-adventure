@@ -68,6 +68,13 @@ If the game does not natively support Linux and just displays "Available for ![w
 
 The game launches, but the controller mappings was not quite right.
 
+To enable 'Steam Play' for all games instead of doing it for each of them individually you can also do this.
+* Press 'Steam' (Top left)
+* Press 'Settings'
+* Press 'Steam Play'
+* Tick the box 'Enable Steam Play for all other titles'
+* * Here its also possible to set the default Proton version.
+
 ### Xbox Controller
 Simply opened Bluetooth and set the controller in paring mode.
 The selected it in the menu and it was then connected.
