@@ -4,7 +4,8 @@
 - [X] Update from Pop!_OS 21.04 => 22.04.
 - [X] Make sure all installed software is up to date.
 - [X] Make Razer Keyboard/ mouse lights static instead of breath
-- [ ] Disable middlemouse click doing 'random' paste (From X server ?)
+- [X] Disable middlemouse click doing 'random' paste (From X server ?)
+- [ ] Make lockscreen appear on the correct screen
 - [X] Getting Steam up and running.
 - [X] Update Nvidia drivers
 - [X] Getting non linux game PlateUp to run in Steam via Proton
@@ -141,6 +142,21 @@ sudo apt install nvidia-driver-515
 ```
 
 Then after a reboot the Nvidia drivers was updated, confirmed using 'Nvidia X server'
+
+
+### Lockscreen on main display
+The wrong screen was used by the system for sign in.
+
+Quick google and i found this from [askubuntu.com](https://askubuntu.com/questions/1043337/is-there-to-make-the-login-screen-appear-on-the-external-display-in-18-04)
+
+I then just ran these 2 commands.
+```bash
+sudo cp .config/monitors.xml ~gdm/.config/monitors.xml
+sudo chown gdm:gdm ~gdm/.config/monitors.xml
+```
+
+After a restart my login was on the correct screen at startup.
+
 
 ---
 
