@@ -95,6 +95,22 @@ To enable 'Steam Play' for all games instead of doing it for each of them indivi
 * Tick the box 'Enable Steam Play for all other titles'
 * * Here its also possible to set the default Proton version.
 
+#### gamemoderun
+Installed 'gamemoderun' using Pop!_Shop [Github](https://github.com/FeralInteractive/gamemode).
+Its suposedely makes games run faster/better ?
+Need to test this.
+
+To use it add one of these as 'launch options' for each game you want to use it with
+```
+gamemoderun mangohud %command%
+```
+
+or
+
+```
+gamemoderun %command%
+```
+
 ### Xbox Controller
 Simply opened Bluetooth and set the controller in paring mode.
 The selected it in the menu and it was then connected.
