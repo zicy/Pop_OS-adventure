@@ -11,7 +11,7 @@
 - [X] Getting non linux game PlateUp to run in Steam via Proton
 - [X] Get Xbox controller to with Steam
 - [ ] Get ie Sea of Thieves (Xbox live game) to run using Steam and Proton
-
+- [X] Slow mouse scroll
 ---
 
 ### Update Pop!_OS
@@ -157,6 +157,20 @@ sudo chown gdm:gdm ~gdm/.config/monitors.xml
 
 After a restart my login was on the correct screen at startup.
 
+### Mouse scroll speed is slow
+It seem that everybody are using the tool 'imwheel' to change the scroll wheel speed.
+
+
+
+Source: [dev.to](https://dev.to/bbavouzet/ubuntu-20-04-mouse-scroll-wheel-speed-536o)
+```bash
+sudo apt install imwheel
+bash <(curl -s http://www.nicknorton.net/mousewheel.sh)
+```
+I set my speed to '2' using the tool.
+
+Does it autostart, after a reboot ?
+Properly need to add 'imwheel' to startup applications 
 
 ---
 
