@@ -23,7 +23,7 @@ Updated through Settings => OS Upgrade & Recovery
 * * For me this only disabled it in GNOME, hmmm.
 
 ### Razer 'Support'
-Have allready installed OpenRazer LINK
+Have allready installed [OpenRazer](https://openrazer.github.io/)
 
 OpenRazer mentions 4 GUI on their website.
 * [Polychromatic](https://polychromatic.app/)
