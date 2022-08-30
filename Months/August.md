@@ -5,12 +5,12 @@
 - [X] Make sure all installed software is up to date.
 - [X] Make Razer Keyboard/ mouse lights static instead of breath
 - [X] Disable middlemouse click doing 'random' paste (From X server ?)
-- [ ] Make lockscreen appear on the correct screen
+- [X] Make lockscreen appear on the correct screen
 - [X] Getting Steam up and running.
 - [X] Update Nvidia drivers
 - [X] Getting non linux game PlateUp to run in Steam via Proton
 - [X] Get Xbox controller to with Steam
-- [ ] Get ie Sea of Thieves (Xbox live game) to run using Steam and Proton
+- [X] Get ie Sea of Thieves (Xbox live game) to run using Steam and Proton
 - [X] Slow mouse scroll
 ---
 
@@ -33,7 +33,7 @@ echo "" >> ~/.profile
 echo "xbindkeys -p" >> ~/.profile
 ```
 
-Need to test it works after reboot.
+~~Need to test it works after reboot.~~
 
 ### Razer 'Support'
 Have allready installed [OpenRazer](https://openrazer.github.io/)
